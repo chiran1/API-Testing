@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="API.TC002_POST_Request">
+      <class name="API.TCOO6_GET_ExtractValueOfEachNodeInJASON">
         <methods>
-          <include name="RegistrationSuccessful"/>
+          <include name="getWeatherDetailsVerify"/>
         </methods>
-      </class> <!-- API.TC002_POST_Request -->
+      </class> <!-- API.TCOO6_GET_ExtractValueOfEachNodeInJASON -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

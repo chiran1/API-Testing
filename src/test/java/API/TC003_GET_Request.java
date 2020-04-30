@@ -35,6 +35,8 @@ public class TC003_GET_Request {
 		String contentEncoding = response.header("Content-Encoding");// capture details of Content-Encoding header
 		System.out.println("Content Encoding is:" + contentEncoding);
 		Assert.assertEquals(contentEncoding, "gzip");
+		
+		
 	}
 
 }
