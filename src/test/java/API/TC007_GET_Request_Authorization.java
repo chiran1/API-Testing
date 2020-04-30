@@ -13,7 +13,7 @@ public class TC007_GET_Request_Authorization {
 
 	@Test
 	void Authorization() {
-		// sepecify base URI
+		// sepecify baseURI
 		RestAssured.baseURI = "http://restapi.demoqa.com/authentication/CheckForAuthentication";
 
 		// basic authentication
