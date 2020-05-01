@@ -1,17 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1828" started-at="2020-04-30T17:49:17 EDT" finished-at="2020-04-30T17:49:18 EDT">
+  <suite name="Default suite" duration-ms="2602" started-at="2020-05-01T15:28:08 EDT" finished-at="2020-05-01T15:28:10 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1828" started-at="2020-04-30T17:49:17 EDT" finished-at="2020-04-30T17:49:18 EDT">
-      <class name="API.TC007_GET_Request_Authorization">
-        <test-method status="PASS" signature="Authorization()[pri:0, instance:API.TC007_GET_Request_Authorization@dccd4c1b]" name="Authorization" duration-ms="1792" started-at="2020-04-30T17:49:17 EDT" finished-at="2020-04-30T17:49:18 EDT">
+    <test name="Default test" duration-ms="2602" started-at="2020-05-01T15:28:08 EDT" finished-at="2020-05-01T15:28:10 EDT">
+      <class name="DataDrivenTest.DataDrivenTest_AddNewEmployees">
+        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@1b2154a1]" name="addNewEmployees" duration-ms="1798" started-at="2020-05-01T15:28:08 EDT" data-provider="empDataProvider" finished-at="2020-05-01T15:28:09 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[harkey]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[948594]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[40]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Authorization -->
-      </class> <!-- API.TC007_GET_Request_Authorization -->
+        </test-method> <!-- addNewEmployees -->
+        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@1b2154a1]" name="addNewEmployees" duration-ms="394" started-at="2020-05-01T15:28:09 EDT" data-provider="empDataProvider" finished-at="2020-05-01T15:28:10 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[98493]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[32]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEmployees -->
+        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@1b2154a1]" name="addNewEmployees" duration-ms="374" started-at="2020-05-01T15:28:10 EDT" data-provider="empDataProvider" finished-at="2020-05-01T15:28:10 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ksdfjksd]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[34343]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEmployees -->
+      </class> <!-- DataDrivenTest.DataDrivenTest_AddNewEmployees -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="API.TC007_GET_Request_Authorization">
+      <class name="DataDrivenTest.DataDrivenTest_AddNewEmployees">
         <methods>
-          <include name="Authorization"/>
+          <include name="addNewEmployees"/>
         </methods>
-      </class> <!-- API.TC007_GET_Request_Authorization -->
+      </class> <!-- DataDrivenTest.DataDrivenTest_AddNewEmployees -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
