@@ -1,5 +1,7 @@
 package DataDrivenTest;
 
+import java.io.IOException;
+
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -11,8 +13,8 @@ import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class DataDrivenTest_AddNewEmployees {
-	
-	@Test(dataProvider="empDataProvider")
+
+	@Test(dataProvider = "empDataProvider")
 	void addNewEmployees(String name, String age, String sal) {
 		// sepecify base URI
 		RestAssured.baseURI = "http://dummy.restapiexample.com/api/v1";
@@ -35,7 +37,7 @@ public class DataDrivenTest_AddNewEmployees {
 
 		// capture response body to perform validations
 		String responseBody = response.getBody().asString();
-		System.out.println("eResponse body is: "+ responseBody);
+		System.out.println("eResponse body is: " + responseBody);
 		System.out.println("responseBody is: " + responseBody);
 		Assert.assertEquals(responseBody.contains(name), true);
 		Assert.assertEquals(responseBody.contains(age), true);
@@ -52,9 +54,24 @@ public class DataDrivenTest_AddNewEmployees {
 		Assert.assertEquals(statusLine, "HTTP/1.1 200 OK");
 	}
 
-	@DataProvider(name="empDataProvider")
-	String[][] getEmpData(){
-		String empdata[][]= {{"harkey", "948594", "40"}, {"hi", "98493", "32"}, {"ksdfjksd", "34343", "34"}};
-		return(empdata);
+	@DataProvider(name = "empDataProvider")
+	String[][] getEmpData() throws IOException {
+
+		//read data from excel
+		String path = System.getProperty("user.dir") + "\\src\\test\\java\\DataDrivenTest\\data.xlsx";
+		int rownum = XLUtils.getRowCount(path, "Sheet1");
+		int colcount = XLUtils.getCellCount(path, "Sheet1", 1);
+
+		String empdata[][] = new String[rownum][colcount];
+
+		for (int i = 1; i <= rownum; i++) {
+			for (int j = 0; j < colcount; j++) {
+				empdata[i - 1][j] = XLUtils.getCellData(path, "Sheet1", i, j);
+			}
+		}
+
+		// String empdata[][] = { { "harkey", "948594", "40" }, { "hi", "98493", "32" },
+		// { "ksdfjksd", "34343", "34" } };
+		return (empdata);
 	}
 }

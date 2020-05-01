@@ -1,69 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="2602" started-at="2020-05-01T15:28:08 EDT" finished-at="2020-05-01T15:28:10 EDT">
+  <suite name="Default suite" duration-ms="9266" started-at="2020-05-01T17:22:14 EDT" finished-at="2020-05-01T17:22:23 EDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="2602" started-at="2020-05-01T15:28:08 EDT" finished-at="2020-05-01T15:28:10 EDT">
+    <test name="Default test" duration-ms="9266" started-at="2020-05-01T17:22:14 EDT" finished-at="2020-05-01T17:22:23 EDT">
       <class name="DataDrivenTest.DataDrivenTest_AddNewEmployees">
-        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@1b2154a1]" name="addNewEmployees" duration-ms="1798" started-at="2020-05-01T15:28:08 EDT" data-provider="empDataProvider" finished-at="2020-05-01T15:28:09 EDT">
+        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@2e12065b]" name="addNewEmployees" duration-ms="1920" started-at="2020-05-01T17:22:15 EDT" data-provider="empDataProvider" finished-at="2020-05-01T17:22:17 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[harkey]]>
+                <![CDATA[ra]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[948594]]>
+                <![CDATA[4000]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[40]]>
+                <![CDATA[21]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewEmployees -->
-        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@1b2154a1]" name="addNewEmployees" duration-ms="394" started-at="2020-05-01T15:28:09 EDT" data-provider="empDataProvider" finished-at="2020-05-01T15:28:10 EDT">
+        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@2e12065b]" name="addNewEmployees" duration-ms="4556" started-at="2020-05-01T17:22:17 EDT" data-provider="empDataProvider" finished-at="2020-05-01T17:22:22 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[hi]]>
+                <![CDATA[ra1]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[98493]]>
+                <![CDATA[4001]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[32]]>
+                <![CDATA[22]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addNewEmployees -->
-        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@1b2154a1]" name="addNewEmployees" duration-ms="374" started-at="2020-05-01T15:28:10 EDT" data-provider="empDataProvider" finished-at="2020-05-01T15:28:10 EDT">
+        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@2e12065b]" name="addNewEmployees" duration-ms="503" started-at="2020-05-01T17:22:22 EDT" data-provider="empDataProvider" finished-at="2020-05-01T17:22:22 EDT">
           <params>
             <param index="0">
               <value>
-                <![CDATA[ksdfjksd]]>
+                <![CDATA[ra2]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[34343]]>
+                <![CDATA[4002]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[34]]>
+                <![CDATA[23]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEmployees -->
+        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@2e12065b]" name="addNewEmployees" duration-ms="482" started-at="2020-05-01T17:22:22 EDT" data-provider="empDataProvider" finished-at="2020-05-01T17:22:23 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ra3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4003]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewEmployees -->
+        <test-method status="PASS" signature="addNewEmployees(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDrivenTest_AddNewEmployees@2e12065b]" name="addNewEmployees" duration-ms="476" started-at="2020-05-01T17:22:23 EDT" data-provider="empDataProvider" finished-at="2020-05-01T17:22:23 EDT">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ra4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4004]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[25]]>
               </value>
             </param>
           </params>
